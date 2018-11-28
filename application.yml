@@ -4,6 +4,13 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+      
+# Allow Eureka to recognize two apps of the same type 
+# on the same host as separate instances (see bonus step):
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+
 
 ---
 spring:
@@ -44,6 +51,13 @@ spring:
 words: boat,book,vote,seat,backpack,partition,groundhog
 server:
   port: 9003
+  
+---  
+spring:
+  profiles: cold-noun
+  words: icicle,refrigerator,blizzard,snowball
+server:
+  port: 9013
 
 ---
 spring:
