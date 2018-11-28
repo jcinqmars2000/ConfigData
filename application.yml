@@ -7,6 +7,11 @@ eureka:
 
 ---
 spring:
+  profiles: sentence
+server:
+  port: 9006
+---
+spring:
   profiles: subject
 words: I,You,He,She,I
 server:
