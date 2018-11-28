@@ -19,7 +19,7 @@ server:
 ---
 spring:
   profiles: subject
-words: I,You,He,She,I
+words: I,You,He,She,It
 server:
   port: 9004
  
