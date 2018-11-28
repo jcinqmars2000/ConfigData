@@ -3,7 +3,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/,
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
 
 ---
 spring:
@@ -45,18 +45,29 @@ spring:
   profiles: eureka-primary
 server:
   port: 8011
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8012/eureka/,http://localhost:8013/eureka/
 
 ---
 spring:
   profiles: eureka-secondary
 server:
   port: 8012
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8013/eureka/  
   
 ---
 spring:
   profiles: eureka-tertiary
 server:
   port: 8013
-  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/  
   
   
