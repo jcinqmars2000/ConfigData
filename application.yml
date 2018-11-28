@@ -3,7 +3,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://localhost:8011/eureka/,
 
 ---
 spring:
@@ -39,4 +39,24 @@ spring:
 words: boat,book,vote,seat,backpack,partition,groundhog
 server:
   port: 9003
+  
+  ---
+spring:
+  profiles: eureka-primary
+server:
+  port: 8011
+  
+    ---
+spring:
+  profiles: eureka-secondary
+server:
+  port: 8012
+  
+      ---
+spring:
+  profiles: eureka-tertiary
+server:
+  port: 8013
+  
+  
   
