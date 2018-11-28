@@ -8,10 +8,8 @@ eureka:
 ---
 spring:
   profiles: subject
-words: I,You,He,She,It
-server:
-  port: 9001
-  
+words: I,You,He,She,I
+ 
 ---
 spring:
   profiles: verb
@@ -26,6 +24,8 @@ words: a,the
 spring:
   profiles: adjective
 words: reasonable,leaky,suspicious,ordinary,unlikely
+server:
+  port: 9001
 
 ---
 spring:
