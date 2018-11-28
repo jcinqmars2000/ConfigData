@@ -9,16 +9,22 @@ eureka:
 spring:
   profiles: subject
 words: I,You,He,She,I
+server:
+  port: 9004
  
 ---
 spring:
   profiles: verb
 words: ran,knew,had,saw,bought
+server:
+  port: 9005
 
 ---
 spring:
   profiles: article
 words: a,the
+server:
+  port: 9002
 
 ---
 spring:
@@ -31,4 +37,6 @@ server:
 spring:
   profiles: noun
 words: boat,book,vote,seat,backpack,partition,groundhog
+server:
+  port: 9003
   
