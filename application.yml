@@ -18,6 +18,13 @@ server:
   port: 8020
 ---
 spring:
+  profiles: word
+# Note: all properties defined in this file are subject to replacement by the configuration server.
+words: fallback
+server:
+  port: 8030
+---
+spring:
   profiles: subject
 words: I,You,He,She,It
 server:
