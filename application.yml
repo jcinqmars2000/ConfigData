@@ -20,7 +20,7 @@ server:
 spring:
   profiles: word
 # Note: all properties defined in this file are subject to replacement by the configuration server.
-words: fallback
+words: foo,bar,baz
 server:
   port: 8030
 ---
