@@ -1,2 +1,5 @@
 ---
-lucky-word: Horseshoe
+wordConfig:
+  preamble: The lucky word is
+  luckyWord: Irish
+  
