@@ -1,2 +1,4 @@
 ---
-lucky-word: "The Golden Hosrse Shoe"
+lucky-word: "The Golden Horse Shoe"
+server:
+  port: 8012
