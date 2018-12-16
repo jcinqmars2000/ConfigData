@@ -9,8 +9,12 @@ eureka:
 # on the same host as separate instances (see bonus step):
   instance:
     instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
-
-
+---
+spring:
+  profiles: nothamerica
+lucky-word: "The Golden Hosrse Shoe"
+server:
+  port: 8002
 ---
 spring:
   profiles: sentence
