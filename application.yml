@@ -92,7 +92,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone:  defaultZone: http://eureka-primary.responsible-nrg.com:8011/eureka,http://eureka-tertiary.responsible-nrg.com:8013/eureka
+      defaultZone: http://eureka-primary.responsible-nrg.com:8011/eureka,http://eureka-tertiary.responsible-nrg.com:8013/eureka
   
 ---
 spring:
