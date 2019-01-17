@@ -102,4 +102,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: defaultZone: http://eureka-primary.responsible-nrg.com:8011/eureka,http://eureka-secondary.responsible-nrg.com:8012/eureka
+      defaultZone: http://eureka-primary.responsible-nrg.com:8011/eureka,http://eureka-secondary.responsible-nrg.com:8012/eureka
