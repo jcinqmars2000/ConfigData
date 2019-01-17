@@ -3,7 +3,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-primary.responsible-nrg.com/eureka/,http://eureka-secondary.responsible-nrg.com/eureka/,http://eureka-tertiary.responsible-nrg.com/eureka/
+      defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-secondary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
       
 # Allow Eureka to recognize two apps of the same type 
 # on the same host as separate instances (see bonus step):
@@ -82,7 +82,7 @@ server:
 eureka:
   client:
     serviceUrl:
-       defaultZone: http://eureka-secondary.responsible-nrg.com/eureka/,http://eureka-tertiary.responsible-nrg.com/eureka/
+       defaultZone: http://eureka-secondary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
 
 ---
 spring:
@@ -92,7 +92,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone:  defaultZone: http://eureka-primary.responsible-nrg.com/eureka/,http://eureka-tertiary.responsible-nrg.com/eureka/
+      defaultZone:  defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
   
 ---
 spring:
@@ -102,4 +102,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: defaultZone: http://eureka-primary.responsible-nrg.com/eureka/,http://eureka-secondary.responsible-nrg.com/eureka/
+      defaultZone: defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-secondary.responsible-nrg.com
