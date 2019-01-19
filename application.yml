@@ -4,8 +4,7 @@ eureka:
   shouldBatchReplication: true
   client:
     serviceUrl:
-      defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-secondary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
-
+      defaultZone: http://ec2-100-26-129-195.compute-1.amazonaws.com,http://2-3-91-139-47.compute-1.amazonaws.com,http://ec2-18-210-139-129.compute-1.amazonaws.com
    
       
 # Allow Eureka to recognize two apps of the same type 
@@ -88,7 +87,7 @@ eureka:
   shouldBatchReplication: true
   client:
     serviceUrl:
-       defaultZone: http://eureka-secondary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
+      defaultZone: http://2-3-91-139-47.compute-1.amazonaws.com,http://ec2-18-210-139-129.compute-1.amazonaws.com
 
 ---
 spring:
@@ -101,7 +100,7 @@ eureka:
   shouldBatchReplication: true
   client:
     serviceUrl:
-      defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
+      defaultZone: http://ec2-100-26-129-195.compute-1.amazonaws.com,http://ec2-18-210-139-129.compute-1.amazonaws.com
   
 ---
 spring:
@@ -114,4 +113,4 @@ eureka:
   shouldBatchReplication: true
   client:
     serviceUrl:
-      defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-secondary.responsible-nrg.com
+      defaultZone: http://ec2-100-26-129-195.compute-1.amazonaws.com,http://2-3-91-139-47.compute-1.amazonaws.com
