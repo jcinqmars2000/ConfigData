@@ -100,7 +100,7 @@ eureka:
   shouldBatchReplication: true
   client:
     serviceUrl:
-      defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com000000
+      defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
   
 ---
 spring:
