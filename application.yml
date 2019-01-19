@@ -1,9 +1,12 @@
 ---
 # Items that apply to ALL profiles:
 eureka:
+  shouldBatchReplication: true
   client:
     serviceUrl:
       defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-secondary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
+
+   
       
 # Allow Eureka to recognize two apps of the same type 
 # on the same host as separate instances (see bonus step):
@@ -80,6 +83,9 @@ spring:
 server:
   port: 8011
 eureka:
+  eurekaServer:
+    domainName: eureka-primary.responsible-nrg.com
+  shouldBatchReplication: true
   client:
     serviceUrl:
        defaultZone: http://eureka-secondary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
@@ -90,6 +96,9 @@ spring:
 server:
   port: 8012
 eureka:
+  eurekaServer:
+    domainName: eureka-secondary.responsible-nrg.com
+  shouldBatchReplication: true
   client:
     serviceUrl:
       defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-tertiary.responsible-nrg.com
@@ -100,6 +109,9 @@ spring:
 server:
   port: 8013
 eureka:
+  eurekaServer:
+    domainName: eureka-tertiary.responsible-nrg.com
+  shouldBatchReplication: true
   client:
     serviceUrl:
       defaultZone: http://eureka-primary.responsible-nrg.com,http://eureka-secondary.responsible-nrg.com
