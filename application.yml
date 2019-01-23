@@ -82,6 +82,9 @@ spring:
 server:
   port: 8011
 eureka:
+  instance:
+    hostname: eureka-primary.responsible-nrg.com
+    appname: eureka-cluster
   eurekaServer:
     domainName: eureka-primary.responsible-nrg.com
   shouldBatchReplication: true
@@ -95,6 +98,9 @@ spring:
 server:
   port: 8012
 eureka:
+  instance:
+    hostname: eureka-secondary.responsible-nrg.com
+    appname: eureka-cluster
   eurekaServer:
     domainName: eureka-secondary.responsible-nrg.com
   shouldBatchReplication: true
@@ -108,6 +114,9 @@ spring:
 server:
   port: 8013
 eureka:
+  instance:
+    hostname: eureka-tertiary.responsible-nrg.com
+    appname: eureka-cluster
   eurekaServer:
     domainName: eureka-tertiary.responsible-nrg.com
   shouldBatchReplication: true
