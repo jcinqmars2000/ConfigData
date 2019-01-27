@@ -19,6 +19,16 @@ server:
   port: 8012
 ---
 spring:
+  profiles: sentence-stats
+server:
+  port: 8021
+management: 
+  endpoints: 
+    web: 
+      exposure: 
+        include: 'hystrix.stream'  
+---
+spring:
   profiles: sentence
 server:
   port: 8020
